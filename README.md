@@ -4,7 +4,8 @@
 
 ## Installation
 
-<p>Git clone branch master </p>
+<p>Git clone https://github.com/tsablon/ClimaSwiftUI.git </p>
+<p>branch master</p>
 
 ## Screenshots
   <div>
