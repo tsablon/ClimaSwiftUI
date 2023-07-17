@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B135C5CF2A65575700360508 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = B135C5CE2A65575700360508 /* Weather.swift */; };
+		B135C5D12A65577D00360508 /* IconWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = B135C5D02A65577D00360508 /* IconWeather.swift */; };
 		B153B2DA2A652CDF00EF15EB /* ClimaSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B153B2D92A652CDF00EF15EB /* ClimaSwiftUIApp.swift */; };
 		B153B2DC2A652CDF00EF15EB /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B153B2DB2A652CDF00EF15EB /* HomeScreen.swift */; };
 		B153B2DE2A652CF300EF15EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B153B2DD2A652CF300EF15EB /* Assets.xcassets */; };
@@ -44,6 +46,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B135C5CE2A65575700360508 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		B135C5D02A65577D00360508 /* IconWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconWeather.swift; sourceTree = "<group>"; };
 		B153B2D62A652CDF00EF15EB /* ClimaSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClimaSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B153B2D92A652CDF00EF15EB /* ClimaSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimaSwiftUIApp.swift; sourceTree = "<group>"; };
 		B153B2DB2A652CDF00EF15EB /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
@@ -91,6 +95,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B135C5CD2A65571D00360508 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B135C5CE2A65575700360508 /* Weather.swift */,
+				B135C5D02A65577D00360508 /* IconWeather.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		B153B2CD2A652CDF00EF15EB = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +127,7 @@
 		B153B2D82A652CDF00EF15EB /* ClimaSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				B135C5CD2A65571D00360508 /* Models */,
 				B17934202A654BB300898579 /* ViewModels */,
 				B19B21E12A65409F00D22A12 /* Views */,
 				B19B21DA2A6538F400D22A12 /* Modifiers */,
@@ -335,6 +349,8 @@
 				B19B21E32A6540B600D22A12 /* WeatherListView.swift in Sources */,
 				B19B21DE2A65396600D22A12 /* View+Extensions.swift in Sources */,
 				B19B21EB2A6544B400D22A12 /* WeatherDetailScreen.swift in Sources */,
+				B135C5CF2A65575700360508 /* Weather.swift in Sources */,
+				B135C5D12A65577D00360508 /* IconWeather.swift in Sources */,
 				B19B21DC2A65392900D22A12 /* RoundedButtonModifier.swift in Sources */,
 				B17934222A654BCA00898579 /* WeatherListViewModel.swift in Sources */,
 				B19B21E92A65432400D22A12 /* IconLoadingView.swift in Sources */,
