@@ -121,8 +121,8 @@
 			isa = PBXGroup;
 			children = (
 				B12501042A65604F0025953A /* WeatherServiceTests.swift */,
-				B12500FD2A6560190025953A /* ClimaSwiftUIUITestsLaunchTests.swift */,
 				B1F01FF52A6567E60057C081 /* WeatherListViewModelTest.swift */,
+				B12500FD2A6560190025953A /* ClimaSwiftUIUITestsLaunchTests.swift */,
 			);
 			path = ClimaSwiftUIUITests;
 			sourceTree = "<group>";
