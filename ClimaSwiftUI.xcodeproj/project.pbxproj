@@ -14,6 +14,7 @@
 		B153B2EB2A652CF400EF15EB /* ClimaSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B153B2EA2A652CF400EF15EB /* ClimaSwiftUITests.swift */; };
 		B153B2F52A652CF400EF15EB /* ClimaSwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B153B2F42A652CF400EF15EB /* ClimaSwiftUIUITests.swift */; };
 		B153B2F72A652CF500EF15EB /* ClimaSwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B153B2F62A652CF500EF15EB /* ClimaSwiftUIUITestsLaunchTests.swift */; };
+		B17934222A654BCA00898579 /* WeatherListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17934212A654BCA00898579 /* WeatherListViewModel.swift */; };
 		B19B21D92A6538D000D22A12 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19B21D82A6538D000D22A12 /* Color+Extensions.swift */; };
 		B19B21DC2A65392900D22A12 /* RoundedButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19B21DB2A65392900D22A12 /* RoundedButtonModifier.swift */; };
 		B19B21DE2A65396600D22A12 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19B21DD2A65396600D22A12 /* View+Extensions.swift */; };
@@ -53,6 +54,7 @@
 		B153B2F02A652CF400EF15EB /* ClimaSwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClimaSwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B153B2F42A652CF400EF15EB /* ClimaSwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimaSwiftUIUITests.swift; sourceTree = "<group>"; };
 		B153B2F62A652CF500EF15EB /* ClimaSwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimaSwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B17934212A654BCA00898579 /* WeatherListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListViewModel.swift; sourceTree = "<group>"; };
 		B19B21D82A6538D000D22A12 /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
 		B19B21DB2A65392900D22A12 /* RoundedButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButtonModifier.swift; sourceTree = "<group>"; };
 		B19B21DD2A65396600D22A12 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 		B153B2D82A652CDF00EF15EB /* ClimaSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				B17934202A654BB300898579 /* ViewModels */,
 				B19B21E12A65409F00D22A12 /* Views */,
 				B19B21DA2A6538F400D22A12 /* Modifiers */,
 				B19B21D62A6538A000D22A12 /* Extensions */,
@@ -146,6 +149,14 @@
 				B153B2F62A652CF500EF15EB /* ClimaSwiftUIUITestsLaunchTests.swift */,
 			);
 			path = ClimaSwiftUIUITests;
+			sourceTree = "<group>";
+		};
+		B17934202A654BB300898579 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B17934212A654BCA00898579 /* WeatherListViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		B19B21D52A65376E00D22A12 /* Screens */ = {
@@ -325,6 +336,7 @@
 				B19B21DE2A65396600D22A12 /* View+Extensions.swift in Sources */,
 				B19B21EB2A6544B400D22A12 /* WeatherDetailScreen.swift in Sources */,
 				B19B21DC2A65392900D22A12 /* RoundedButtonModifier.swift in Sources */,
+				B17934222A654BCA00898579 /* WeatherListViewModel.swift in Sources */,
 				B19B21E92A65432400D22A12 /* IconLoadingView.swift in Sources */,
 				B19B21E72A65429800D22A12 /* LoadingView.swift in Sources */,
 			);

@@ -9,10 +9,13 @@ import SwiftUI
 
 struct ResetView: View {
     
+    @EnvironmentObject var weatherListViewModel: WeatherListViewModel
+    
     var body: some View {
         
         Button("Recommencer",action:{
-
+            weatherListViewModel.reset()
+            weatherListViewModel.startLoading()
         })
         .roundedButton()
     }

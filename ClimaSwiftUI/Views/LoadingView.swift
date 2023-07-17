@@ -9,10 +9,11 @@ import SwiftUI
 
 struct LoadingView: View {
 
+    @EnvironmentObject var weatherListViewModel: WeatherListViewModel
     
     var body: some View {
-        ProgressView(value: 5, total: 60) {
-            Text("message")
+        ProgressView(value: Float(weatherListViewModel.progressValue), total: 60) {
+            Text(weatherListViewModel.message)
                 .fixedSize(horizontal: false, vertical: true)
                 .padding(EdgeInsets(top: 0, leading: 0, bottom: 10, trailing: 0))
         }

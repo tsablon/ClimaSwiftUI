@@ -9,6 +9,7 @@ import SwiftUI
 
 struct WeatherListScreen: View {
     
+    @EnvironmentObject var weatherListViewModel: WeatherListViewModel
     
     var body: some View {
         
@@ -16,20 +17,28 @@ struct WeatherListScreen: View {
             LinearGradient(gradient: Gradient(colors: [Color.lightBlue, Color.midBlue, Color.darkBlue]), startPoint: .top, endPoint: .bottom)
                 .ignoresSafeArea()
             VStack {
-                WeatherListView()
-                ResetView()
-                IconLoadingView()
-                LoadingView()
+                Spacer()
+                if weatherListViewModel.loadingCompleted {
+                    WeatherListView()
+                    ResetView()
+    
+                } else {
+                    VStack {
+                        Spacer()
+                        IconLoadingView()
+                        Spacer()
+                        LoadingView()
+                    }
+                }
             }
             .navigationTitle("")
         }
-        
     }
 }
 
 struct WeatherListScreen_Previews: PreviewProvider {
     static var previews: some View {
-        WeatherListScreen()
+        WeatherListScreen().environmentObject(WeatherListViewModel())
         
     }
 }
