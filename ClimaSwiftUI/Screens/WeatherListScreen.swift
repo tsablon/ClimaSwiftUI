@@ -18,7 +18,7 @@ struct WeatherListScreen: View {
                 .ignoresSafeArea()
             VStack {
                 Spacer()
-                if weatherListViewModel.loadingCompleted {
+                if weatherListViewModel.loadingCompleted && weatherListViewModel.fetchCompleted {
                     WeatherListView()
                     ResetView()
     
