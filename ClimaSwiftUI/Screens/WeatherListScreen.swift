@@ -17,17 +17,21 @@ struct WeatherListScreen: View {
             LinearGradient(gradient: Gradient(colors: [Color.lightBlue, Color.midBlue, Color.darkBlue]), startPoint: .top, endPoint: .bottom)
                 .ignoresSafeArea()
             VStack {
-                Spacer()
-                if weatherListViewModel.loadingCompleted && weatherListViewModel.fetchCompleted {
-                    WeatherListView()
-                    ResetView()
-    
+                if weatherListViewModel.hasError {
+                    ErrorView()
                 } else {
-                    VStack {
-                        Spacer()
-                        IconLoadingView()
-                        Spacer()
-                        LoadingView()
+                    Spacer()
+                    if weatherListViewModel.loadingCompleted && weatherListViewModel.fetchCompleted {
+                        WeatherListView()
+                        ResetView()
+        
+                    } else {
+                        VStack {
+                            Spacer()
+                            IconLoadingView()
+                            Spacer()
+                            LoadingView()
+                        }
                     }
                 }
             }
