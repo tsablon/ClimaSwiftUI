@@ -43,10 +43,9 @@ class WeatherListViewModel: ObservableObject {
     
     func reset() {
         
-        print("reset")
-
         self.message = loadingMessage[0]
         
+        self.fetchCounter = 0
         self.progressValue = 0
         self.messageCounter = 1
 
@@ -96,7 +95,6 @@ class WeatherListViewModel: ObservableObject {
             timer.invalidate()
         } else {
             message = loadingMessage[messageCounter]
-            print("message fired:", message)
             
             if messageCounter == loadingMessage.count - 1 {
                 messageCounter = 0
