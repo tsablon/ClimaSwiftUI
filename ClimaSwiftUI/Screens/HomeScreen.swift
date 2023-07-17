@@ -14,7 +14,7 @@ struct HomeScreen: View {
                 LinearGradient(gradient: Gradient(colors: [Color.lightBlue, Color.midBlue, Color.darkBlue]), startPoint: .top, endPoint: .bottom)
                     .ignoresSafeArea()
                 NavigationLink("Voir la meteo") {
-
+                    WeatherListScreen()
                 }
                 .roundedButton()
                 
