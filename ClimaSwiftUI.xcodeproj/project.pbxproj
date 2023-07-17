@@ -37,6 +37,8 @@
 		B1F01FF62A6567E60057C081 /* WeatherListViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F01FF52A6567E60057C081 /* WeatherListViewModelTest.swift */; };
 		B1F01FF72A6567F60057C081 /* WeatherListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17934212A654BCA00898579 /* WeatherListViewModel.swift */; };
 		B1F01FF92A656DE20057C081 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F01FF82A656DE20057C081 /* WeatherViewModel.swift */; };
+		B1F01FFB2A656ED10057C081 /* Measurement+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F01FFA2A656ED10057C081 /* Measurement+Extensions.swift */; };
+		B1F01FFD2A656F010057C081 /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F01FFC2A656F010057C081 /* Double+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +78,8 @@
 		B19B21EA2A6544B400D22A12 /* WeatherDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetailScreen.swift; sourceTree = "<group>"; };
 		B1F01FF52A6567E60057C081 /* WeatherListViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListViewModelTest.swift; sourceTree = "<group>"; };
 		B1F01FF82A656DE20057C081 /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
+		B1F01FFA2A656ED10057C081 /* Measurement+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Measurement+Extensions.swift"; sourceTree = "<group>"; };
+		B1F01FFC2A656F010057C081 /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +204,8 @@
 			children = (
 				B19B21D82A6538D000D22A12 /* Color+Extensions.swift */,
 				B19B21DD2A65396600D22A12 /* View+Extensions.swift */,
+				B1F01FFA2A656ED10057C081 /* Measurement+Extensions.swift */,
+				B1F01FFC2A656F010057C081 /* Double+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -348,6 +354,8 @@
 				B153B2DA2A652CDF00EF15EB /* ClimaSwiftUIApp.swift in Sources */,
 				B19B21E02A653F6B00D22A12 /* WeatherListScreen.swift in Sources */,
 				B19B21D92A6538D000D22A12 /* Color+Extensions.swift in Sources */,
+				B1F01FFB2A656ED10057C081 /* Measurement+Extensions.swift in Sources */,
+				B1F01FFD2A656F010057C081 /* Double+Extensions.swift in Sources */,
 				B19B21E32A6540B600D22A12 /* WeatherListView.swift in Sources */,
 				B19B21DE2A65396600D22A12 /* View+Extensions.swift in Sources */,
 				B19B21EB2A6544B400D22A12 /* WeatherDetailScreen.swift in Sources */,

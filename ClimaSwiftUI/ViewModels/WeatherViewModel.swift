@@ -26,15 +26,15 @@ class WeatherViewModel : Identifiable {
     }
     
     var temperature: String {
-        return ""
+        return weather.temperature.toCelsius.temperatureToString
     }
     
     var temperatureMin: String {
-        return ""
+        return weather.temperatureMin.toCelsius.temperatureToString
     }
     
     var temperatureMax: String {
-        return ""
+        return weather.temperatureMax.toCelsius.temperatureToString
     }
     
     var sunrise: String {
