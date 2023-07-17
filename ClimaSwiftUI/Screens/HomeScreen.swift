@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct HomeScreen: View {
+    
+    @EnvironmentObject var weatherListViewModel: WeatherListViewModel
+    
     var body: some View {
         NavigationStack {
             ZStack {
@@ -20,9 +23,11 @@ struct HomeScreen: View {
                 
             }.onAppear {
                 print("Appear")
+                weatherListViewModel.reset()
               
             }.onDisappear{
                 print("disappear")
+                weatherListViewModel.startLoading()
                 
             }
             .navigationTitle("")
