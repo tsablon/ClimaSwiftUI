@@ -30,12 +30,14 @@ class WeatherListViewModel: ObservableObject {
     private let loadingMessage = ["Nous téléchargeons les données…","C’est presque fini…","Plus que quelques secondes avant d’avoir le résultat…"]
     
 
-
+    private let weatherService: WeatherServiceProtocol
     
     // MARK: - Lifecycle
     
-    init() {
+    init(service: WeatherServiceProtocol = WeatherService()) {
+
         self.message = loadingMessage[0]
+        self.weatherService = service
     }
     
     func reset() {
