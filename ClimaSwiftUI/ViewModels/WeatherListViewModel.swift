@@ -10,6 +10,7 @@ import Foundation
 class WeatherListViewModel: ObservableObject {
     
     //MARK: - Variables
+    @Published var weatherList: [Weather] = []
     
     @Published var fetchCompleted: Bool = false
     @Published var loadingCompleted: Bool = false
@@ -98,6 +99,23 @@ class WeatherListViewModel: ObservableObject {
             } else {
                 messageCounter += 1
             }
+        }
+    }
+    
+    //MARK: - Fetch data functions
+    
+    @MainActor
+    private func getWeatherByCity(_ cityName: String) async {
+        let weatherData = await weatherService.request(city: cityName)
+        switch weatherData {
+        case .success(let weatherData):
+            
+            weatherList.append(weatherData)
+
+        case .failure(let error):
+            reset()
+            hasError = true
+            print(error.localizedDescription)
         }
     }
     
