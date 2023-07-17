@@ -36,6 +36,7 @@
 		B19B21EB2A6544B400D22A12 /* WeatherDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19B21EA2A6544B400D22A12 /* WeatherDetailScreen.swift */; };
 		B1F01FF62A6567E60057C081 /* WeatherListViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F01FF52A6567E60057C081 /* WeatherListViewModelTest.swift */; };
 		B1F01FF72A6567F60057C081 /* WeatherListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17934212A654BCA00898579 /* WeatherListViewModel.swift */; };
+		B1F01FF92A656DE20057C081 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F01FF82A656DE20057C081 /* WeatherViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		B19B21E82A65432400D22A12 /* IconLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconLoadingView.swift; sourceTree = "<group>"; };
 		B19B21EA2A6544B400D22A12 /* WeatherDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetailScreen.swift; sourceTree = "<group>"; };
 		B1F01FF52A6567E60057C081 /* WeatherListViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListViewModelTest.swift; sourceTree = "<group>"; };
+		B1F01FF82A656DE20057C081 /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				B17934212A654BCA00898579 /* WeatherListViewModel.swift */,
+				B1F01FF82A656DE20057C081 /* WeatherViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -352,6 +355,7 @@
 				B135C5D12A65577D00360508 /* IconWeather.swift in Sources */,
 				B19B21DC2A65392900D22A12 /* RoundedButtonModifier.swift in Sources */,
 				B17934222A654BCA00898579 /* WeatherListViewModel.swift in Sources */,
+				B1F01FF92A656DE20057C081 /* WeatherViewModel.swift in Sources */,
 				B19B21E92A65432400D22A12 /* IconLoadingView.swift in Sources */,
 				B19B21E72A65429800D22A12 /* LoadingView.swift in Sources */,
 				B12500EE2A655CAE0025953A /* Constants.swift in Sources */,
