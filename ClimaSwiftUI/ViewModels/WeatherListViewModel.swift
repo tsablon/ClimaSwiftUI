@@ -51,6 +51,9 @@ class WeatherListViewModel: ObservableObject {
 
         self.hasError = false
         self.loadingCompleted = false
+        self.fetchCompleted = false
+        
+        self.weatherList = []
         
         messageTimer?.invalidate()
         loadingTimer?.invalidate()
@@ -62,7 +65,7 @@ class WeatherListViewModel: ObservableObject {
     func startLoading() {
         displayLoadingMessage()
         loadingProgressView()
-    
+        fetchWeatherEveryTenSecond()
     }
 
     func loadingProgressView() {
@@ -103,6 +106,28 @@ class WeatherListViewModel: ObservableObject {
     }
     
     //MARK: - Fetch data functions
+    
+    func fetchWeatherEveryTenSecond() {
+        Task {
+            await getWeatherByCity(cities[0])
+        }
+        fetchTimer = Timer.scheduledTimer(timeInterval: 10.0, target: self, selector: #selector(fireFetchData(_ :)), userInfo: nil, repeats: true)
+    }
+    
+    
+    @objc private func fireFetchData(_ timer: Timer) {
+        fetchCounter += 1
+        
+        if fetchCounter == cities.count - 1 {
+            fetchCompleted = true
+            timer.invalidate()
+        }
+        
+        Task {
+            await getWeatherByCity(cities[fetchCounter])
+        }
+        
+    }
     
     @MainActor
     private func getWeatherByCity(_ cityName: String) async {
