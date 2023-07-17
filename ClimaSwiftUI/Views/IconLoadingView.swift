@@ -23,7 +23,9 @@ struct IconLoadingView: View {
         .onReceive(timer) { _ in
            counter += 1
 
-        
+            if counter == IconWeather.allCases.count - 1 {
+                counter = 0
+            }
             
             if weatherListViewModel.loadingCompleted && weatherListViewModel.fetchCompleted {
                 timer.upstream.connect().cancel()
