@@ -8,20 +8,27 @@
 import SwiftUI
 
 struct IconLoadingView: View {
-
+    
+    @EnvironmentObject var weatherListViewModel: WeatherListViewModel
+    
     @State var timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     @State var counter = 0
     
     var body: some View {
-        Text("\(counter)")
-        Image(systemName: "cloud")
+        Image(systemName: IconWeather.allCases[counter].image)
             .resizable()
             .scaledToFit()
             .frame(width: 100, height: 100)
             .foregroundColor(Color.white)
         .onReceive(timer) { _ in
            counter += 1
- 
+
+        
+            
+            if weatherListViewModel.loadingCompleted && weatherListViewModel.fetchCompleted {
+                timer.upstream.connect().cancel()
+            }
+           
         }
     }
 }
