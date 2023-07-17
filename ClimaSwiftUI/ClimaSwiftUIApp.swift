@@ -11,7 +11,7 @@ import SwiftUI
 struct ClimaSwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeScreen()
         }
     }
 }
