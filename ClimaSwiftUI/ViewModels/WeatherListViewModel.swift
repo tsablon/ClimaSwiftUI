@@ -10,7 +10,7 @@ import Foundation
 class WeatherListViewModel: ObservableObject {
     
     //MARK: - Variables
-    @Published var weatherList: [Weather] = []
+    @Published var weatherList: [WeatherViewModel] = []
     
     @Published var fetchCompleted: Bool = false
     @Published var loadingCompleted: Bool = false
@@ -46,6 +46,7 @@ class WeatherListViewModel: ObservableObject {
         print("reset")
 
         self.message = loadingMessage[0]
+        
         self.progressValue = 0
         self.messageCounter = 1
 
@@ -134,9 +135,8 @@ class WeatherListViewModel: ObservableObject {
         let weatherData = await weatherService.request(city: cityName)
         switch weatherData {
         case .success(let weatherData):
-            
-            weatherList.append(weatherData)
-
+            let weatherViewModel = WeatherViewModel(weather: weatherData)
+            weatherList.append(weatherViewModel)
         case .failure(let error):
             reset()
             hasError = true

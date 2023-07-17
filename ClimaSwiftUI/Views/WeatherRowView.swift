@@ -9,25 +9,25 @@ import SwiftUI
 
 struct WeatherRowView: View {
     
-    let weather = Weather(city: "Marseille", temperature: 28.41, temperatureMin: 24.92, temperatureMax: 29.26, pressure: 1012, humidity: 41, visibility: 10000, sunrise: Date(timeIntervalSince1970: TimeInterval(1689393754)), sunset: Date(timeIntervalSince1970: TimeInterval(1689450604)), description: "ciel dégagé", iconId: 800)
+    let weatherViewModel: WeatherViewModel
     
     var body: some View {
         
         HStack {
             VStack(alignment: .leading) {
-                Text(weather.city)
+                Text(weatherViewModel.cityName)
                     .font(.system(size: 25, weight: .semibold))
                     .fixedSize(horizontal: false, vertical: true)
                 
-                Text(weather.description)
+                Text(weatherViewModel.description)
                     .font(.system(size: 18))
                     .foregroundColor(Color.gray)
             }
             Spacer()
             VStack(alignment: .center) {
-                Text(weather.temperature.description)
+                Text(weatherViewModel.temperature)
                     .font(.system(size: 30))
-                Image(systemName: "cloud")
+                Image(systemName: weatherViewModel.iconName)
                     .resizable()
                     .scaledToFit()
                     .frame(width: 60, height: 60)
