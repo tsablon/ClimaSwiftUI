@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B12500E62A65594F0025953A /* WeatherRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12500E52A65594F0025953A /* WeatherRowView.swift */; };
 		B135C5CF2A65575700360508 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = B135C5CE2A65575700360508 /* Weather.swift */; };
 		B135C5D12A65577D00360508 /* IconWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = B135C5D02A65577D00360508 /* IconWeather.swift */; };
 		B153B2DA2A652CDF00EF15EB /* ClimaSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B153B2D92A652CDF00EF15EB /* ClimaSwiftUIApp.swift */; };
@@ -46,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B12500E52A65594F0025953A /* WeatherRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRowView.swift; sourceTree = "<group>"; };
 		B135C5CE2A65575700360508 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		B135C5D02A65577D00360508 /* IconWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconWeather.swift; sourceTree = "<group>"; };
 		B153B2D62A652CDF00EF15EB /* ClimaSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClimaSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -207,6 +209,7 @@
 				B19B21E42A6541E100D22A12 /* ResetView.swift */,
 				B19B21E62A65429800D22A12 /* LoadingView.swift */,
 				B19B21E82A65432400D22A12 /* IconLoadingView.swift */,
+				B12500E52A65594F0025953A /* WeatherRowView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -341,6 +344,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B12500E62A65594F0025953A /* WeatherRowView.swift in Sources */,
 				B19B21E52A6541E100D22A12 /* ResetView.swift in Sources */,
 				B153B2DC2A652CDF00EF15EB /* HomeScreen.swift in Sources */,
 				B153B2DA2A652CDF00EF15EB /* ClimaSwiftUIApp.swift in Sources */,
