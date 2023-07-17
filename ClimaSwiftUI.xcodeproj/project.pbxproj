@@ -39,6 +39,7 @@
 		B1F01FF92A656DE20057C081 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F01FF82A656DE20057C081 /* WeatherViewModel.swift */; };
 		B1F01FFB2A656ED10057C081 /* Measurement+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F01FFA2A656ED10057C081 /* Measurement+Extensions.swift */; };
 		B1F01FFD2A656F010057C081 /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F01FFC2A656F010057C081 /* Double+Extensions.swift */; };
+		B1F020032A6592060057C081 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F020022A6592060057C081 /* ErrorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,7 @@
 		B1F01FF82A656DE20057C081 /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
 		B1F01FFA2A656ED10057C081 /* Measurement+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Measurement+Extensions.swift"; sourceTree = "<group>"; };
 		B1F01FFC2A656F010057C081 /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
+		B1F020022A6592060057C081 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,6 +228,7 @@
 				B19B21E62A65429800D22A12 /* LoadingView.swift */,
 				B19B21E82A65432400D22A12 /* IconLoadingView.swift */,
 				B12500E52A65594F0025953A /* WeatherRowView.swift */,
+				B1F020022A6592060057C081 /* ErrorView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -367,6 +370,7 @@
 				B19B21E92A65432400D22A12 /* IconLoadingView.swift in Sources */,
 				B19B21E72A65429800D22A12 /* LoadingView.swift in Sources */,
 				B12500EE2A655CAE0025953A /* Constants.swift in Sources */,
+				B1F020032A6592060057C081 /* ErrorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
