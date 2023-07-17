@@ -15,7 +15,10 @@ struct WeatherListView: View {
         List {
             ForEach(0..<5) { weather in
                 Section {
-                    Text("weather")
+                    NavigationLink(destination: WeatherDetailScreen()) {
+                        Text("weather")
+                        
+                    }
                 }.listRowInsets(EdgeInsets(top: 0, leading: 20, bottom: 0, trailing: -20))
             }
         }
